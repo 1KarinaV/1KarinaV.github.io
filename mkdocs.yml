@@ -1,5 +1,5 @@
 site_name: 1KarinaV mkdocs web site
 nav:
-  - О себе: index.md
-  - Проекты: projects.md
+  - Main: index.md
+  - Report: projects.md
 theme: readthedocs

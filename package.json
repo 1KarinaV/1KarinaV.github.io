@@ -2,18 +2,16 @@
   "name": "mkdocs-frontend-build",
   "private": true,
   "scripts": {
-    "build:css": "postcss overrides/assets/styles.css -o overrides/assets/styles.min.css",
-    "validate:html": "html-validator --file docs --verbose",
-    "minify:js": "terser overrides/assets/script.js -o overrides/assets/script.min.js",
-    "test": "npm run validate:html",
-    "build": "npm run build:css && npm run minify:js"
+    "styles": "postcss overrides/styles.css --use autoprefixer --use cssnano -o overrides/styles.min.css",
+    "js": "terser overrides/script.js -o overrides/script.min.js",
+    "html": "html-minifier --collapse-whitespace --remove-comments --input-dir site --output-dir site --file-ext html",
+    "build": "npm run styles && npm run js && npm run html"
   },
   "devDependencies": {
-    "postcss": "^8.4.38",
+    "html-minifier": "^4.0.0",
     "postcss-cli": "^11.0.0",
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.0",
-    "html-validator": "^5.1.18",
     "terser": "^5.31.0"
   }
 }

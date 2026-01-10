@@ -22,11 +22,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Validate HTML
-        run: npm run validate:html
-
-      - name: Build CSS with PostCSS
-        run: npm run build:css
+      - name: Build CSS
+        run: npm run styles
 
       - name: Minify JS
-        run: npm run minify:js
+        run: npm run js
+
+      - name: Minify HTML
+        run: |
+          pip install mkdocs mkdocs-material
+          mkdocs build
+          npm run html

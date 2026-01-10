@@ -2,8 +2,8 @@
   "name": "mkdocs-frontend-build",
   "private": true,
   "scripts": {
-    "styles": "postcss overrides/assets/styles.css --use autoprefixer --use cssnano -o overrides/assets/styles.min.css",
-    "js": "terser overrides/assets/script.js -o overrides/assets/script.min.js",
+    "styles": "postcss docs/assets/styles.css --use autoprefixer --use cssnano -o docs/assets/styles.min.css",
+    "js": "terser docs/assets/script.js -o docs/assets/script.min.js",
     "html": "html-minifier --collapse-whitespace --remove-comments --input-dir site --output-dir site --file-ext html",
     "build": "npm run styles && npm run js && npm run html"
   },

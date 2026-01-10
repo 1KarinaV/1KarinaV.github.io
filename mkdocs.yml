@@ -4,3 +4,7 @@ nav:
   - Report: report.md
   - Custom Theme Page: custom_page.md
 theme: readthedocs
+extra_css:
+  - styles.css
+extra_javascript:
+  - script.js

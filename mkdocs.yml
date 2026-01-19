@@ -3,9 +3,6 @@ nav:
   - Main: index.md
   - Report: report.md
   - Custom Theme Page: custom_page.md
-theme: ''
-custom_dir: overrides/
-extra_css:
-  - assets/styles.css
-extra_javascript:
-  - assets/script.js
+theme:
+  name: null
+  custom_dir: theme/

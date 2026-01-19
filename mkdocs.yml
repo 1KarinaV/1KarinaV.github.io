@@ -1,4 +1,5 @@
 site_name: 1KarinaV mkdocs web site
+site_author: Владыкина Карина
 nav:
   - Main: index.md
   - Report: report.md

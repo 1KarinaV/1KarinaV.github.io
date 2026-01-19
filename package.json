@@ -2,7 +2,7 @@
   "name": "mkdocs-frontend-build",
   "private": true,
   "scripts": {
-    "styles": "postcss theme/style.css --use autoprefixer --use cssnano -o theme/style.min.css",
+    "styles": "postcss theme/style.css --use autoprefixer --use cssnano --no-map --output site/style.css",
     "js": "terser theme/script.js -o theme/script.min.js",
     "html": "html-minifier --collapse-whitespace --remove-comments --input-dir site --output-dir site --file-ext html",
     "build": "npm run styles && npm run js && npm run html"

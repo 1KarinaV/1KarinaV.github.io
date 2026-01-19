@@ -1,3 +1,0 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Custom MkDocs theme loaded");
-});

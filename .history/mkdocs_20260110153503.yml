@@ -1,0 +1,5 @@
+site_name: 1KarinaV mkdocs web site
+nav:
+  - Main: index.md
+  - Report: report.md
+theme: readthedocs

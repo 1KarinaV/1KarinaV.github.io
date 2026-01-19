@@ -1,5 +1,11 @@
 site_name: 1KarinaV mkdocs web site
+site_author: Владыкина Карина
 nav:
   - Main: index.md
   - Report: report.md
-theme: readthedocs
+  - Custom Theme Page: custom_page.md
+theme:
+  name: null
+  custom_dir: theme/
+watch:
+  - theme
